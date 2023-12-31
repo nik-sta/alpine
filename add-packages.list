@@ -1,0 +1,14 @@
+alpine-conf
+coreutils
+util-linux
+vim
+gpg
+tzdata
+bash
+curl
+openssl
+ca-certificates
+dumb-init
+jq
+fx
+zip
