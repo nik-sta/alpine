@@ -42,8 +42,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: "{{ defaultContext }}:${{ IMAGE_NAME }}"
+          context: ./${{ env.IMAGE_NAME }}
           platforms: linux/amd64,linux/arm64/v8
           pull: true
           push: true
-          tags: nikolastankovic/${{ IMAGE_NAME }}:${{ github.event.inputs.version }}
+          tags: nikolastankovic/${{ env.IMAGE_NAME }}:${{ github.event.inputs.version }}
